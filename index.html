@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetalGestão - Soluções Industriais</title>
+    <style>
+        /* --- 1. Reset e Estilo Global --- */
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- 2. Header (Menu Superior) --- */
+        .main-header {
+            width: 100%;
+            height: 80px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #333;
+        }
+
+        .logo span { color: #d32f2f; }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover { color: #d32f2f; }
+
+
+        /* --- 3. Banner Principal (Hero) --- */
+        .hero-banner {
+            width: 100%;
+            height: 80vh;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                              url('https://media.istockphoto.com/id/1369010523/photo/roll-of-galvanized-steel-sheet-at-metalworking-factory.jpg?s=612x612&w=0&k=20&c=HaY-0pNi1L2UpMggvRlB5NssiUXbW-S8IClRlz4NLa8=');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- 4. Botão de Login Animado (O Retangular) --- */
+        .btn-login-main {
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            font-size: 1rem;
+            padding: 15px 40px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+        }
+
+        .btn-login-main:hover {
+            background-color: #fff;
+            color: #333;
+            letter-spacing: 7px;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        /* --- 5. Seções de Conteúdo (Para permitir Scroll) --- */
+        .section-info {
+            padding: 80px 0;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-info h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        footer {
+            background: #222;
+            color: #777;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">METAL<span>GESTÃO</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>Soluções em Metalurgia</h1>
+            <p>Engenharia de precisão e gestão operacional para a indústria moderna.</p>
+            
+            <a href="/login/login.html" class="btn-login-main">Acessar Sistema</a>
+        </div>
+    </section>
+
+    <section class="section-info">
+        <h2>Excelência Industrial</h2>
+        <p>ssss</p>
+        
+        <div style="margin-top: 50px; height: 300px; background: #f9f9f9; display: flex; align-items: center; justify-content: center; border: 1px solid #eee; border-radius: 8px;">
+            <p>[ Espaço ]</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; V1.0.1 - 2026 - BGS</p>
+    </footer>
+
+</body>
+</html>
