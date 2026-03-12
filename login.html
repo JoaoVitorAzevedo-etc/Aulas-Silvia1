@@ -211,11 +211,11 @@
                 // Login bem-sucedido - redirecionar para a página do cargo
                 mensagemErro.style.display = 'none';
                 if (cargo === 'supervisor') {
-                    window.location.href = '/login/cargo/sup.html';
+                    window.location.href = '/sup.html';
                 } else if (cargo === 'tecnico') {
-                    window.location.href = '/login/cargo/tec.html';
+                    window.location.href = '/tec.html';
                 } else if (cargo === 'engenheiro') {
-                    window.location.href = '/login/cargo/eng.html';
+                    window.location.href = '/eng.html';
                 }
             } else {
                 // Login falhou
@@ -233,4 +233,5 @@
         });
     </script>
 </body>
+
 </html>
